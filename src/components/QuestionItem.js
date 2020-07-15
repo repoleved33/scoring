@@ -1,11 +1,16 @@
 import React from 'react';
 
-const QuestionItem = () => {
+const QuestionListItem = ({ question }) => {
     return (
-        <div>
-            
+        <div className="QuestionItem">
+            <div>
+                {question.id}
+                {question.content}
+                {toString(question.checked)}
+            </div>
         </div>
     );
-}
+};
 
-export default QuestionItem;
+
+export default QuestionListItem;

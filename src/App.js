@@ -12,7 +12,7 @@ function App() {
     {
       id: 1,
       content: "문제 1",
-      checked: false,
+      checked: true,
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ function App() {
       <Header/>
           <Switch>
             <Route exact path="/" component={Main}/>
-            <Route path="/question" component={Question}/>
+            <Route path="/question" render={()=> <Question questionlist={questions}/>}/>
             <Route path="/result" component={Result}/>
           </Switch>
         </div>
