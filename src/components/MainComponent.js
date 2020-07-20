@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/Main.scss';
+import '../styles/MainComponent.scss';
 
-const Main = ({ history }) => {
+const MainComponent = ({ history }) => {
     return (
-        <form className="Main">
+        <form className="MainComponent">
             <div>
                 <button type="submit" onClick={() => {history.push('/question')}}>
                     START
@@ -13,4 +13,4 @@ const Main = ({ history }) => {
     );
 }
 
-export default Main;
+export default MainComponent;

@@ -1,0 +1,52 @@
+.QuestionListItem {
+
+    padding-inline-start: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+    display: flex;
+    align-items: center;
+
+    &:nth-child(even) {
+        background: rgb(218, 234, 236);
+    }
+    
+    .QuestionHeader {
+        font-size: 3rem;
+    }
+
+    .QuestionContent {
+        font-size: 2.5rem;
+        
+        .checkbox {
+            cursor: pointer;
+            flex: 1;
+            display: flex;
+            align-items: center;
+    
+            svg {
+                font-size: 2.5rem;
+            }
+    
+            .text {
+                margin-left: 3rem;
+                flex: 1;
+            }
+            
+            &.checked {
+                svg {
+                    color: #22b8cf;
+                }
+                .text {
+                    color: #adb5bd;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
+
+    & + & {
+        border-top: 2px solid  rgb(200, 200, 200);
+    }
+}

@@ -20,7 +20,9 @@ function createWindow() {
             // Node 환경처럼 사용하려면 (Node에서 제공되는 빌트인 패키지 사용 포함)
             // true 해야 합니다.
             nodeIntegration: true
-        }
+        },
+        width: 1200,
+        height: 800,
     });
     // 3. and load the index.html of the app.
     if (isDev) {
@@ -33,6 +35,7 @@ function createWindow() {
         mainWindow.loadFile(path.join(__dirname, '../build/index.html'));
     }
     // Emitted when the window is closed.
+    mainWindow.maximize();
     mainWindow.on('closed', function () {
         mainWindow = undefined;
     });
