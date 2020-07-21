@@ -8,7 +8,7 @@
     align-items: center;
 
     &:nth-child(even) {
-        background: rgb(218, 234, 236);
+        background: rgb(226, 224, 235);
     }
     
     .QuestionHeader {
@@ -32,18 +32,19 @@
                 margin-left: 3rem;
                 flex: 1;
             }
-            
-            &.checked {
-                svg {
-                    color: #22b8cf;
-                }
-                .text {
-                    color: #adb5bd;
-                    text-decoration: line-through;
-                }
+
+            &.checked_1 {
+                color: rgb(106, 93, 163);
             }
+            &.checked_2 {
+                color: rgb(106, 93, 163);
+            }
+            
         }
+
+        
     }
+    
 
 
     & + & {

@@ -1,11 +1,14 @@
-.QuestionList {
-    margin: 2rem;
+.ResultComponent {
+    margin: 5rem;
     border-radius: 20px;
     border-style: solid;
     border-color: rgb(200, 200, 200);
-    overflow: auto;
+    overflow: hidden;
+
+    min-height: 550px;
 
     align-items: center;
     justify-content: center;
+
 
 }

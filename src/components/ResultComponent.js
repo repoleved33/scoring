@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/ResultComponent.scss'
 
 const ResultComponent = () => {
     return (
-        <div>
+        <div className="ResultComponent">
             Result
         </div>
     );
